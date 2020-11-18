@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./style.css";
 
 /**
- * @author
- * @function
+ * @author: Sohag Babu
+ * @function Modal
  **/
 
 const Modal = (props) => {
@@ -117,4 +117,12 @@ const DropdownMenu = (props) => {
   );
 };
 
-export { Modal, MaterialInput, MaterialButton, DropdownMenu };
+const Anchor = (props) => {
+  return (
+    <button {...props} className="anchorButton">
+      {props.name}
+    </button>
+  );
+};
+
+export { Modal, MaterialInput, MaterialButton, DropdownMenu, Anchor };
